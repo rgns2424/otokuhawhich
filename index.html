@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Apps & Works</title>
+  <title>お得はWHICH</title>
   <style>
     body {
-      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-      background-color: #f5f7fa;
+      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+      background-color: #f9fafb;
       margin: 0;
       padding: 0;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #0078d7;
+      background-color: #2c7be5;
       color: white;
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 2rem 1rem;
     }
 
     header h1 {
@@ -26,118 +27,112 @@
     }
 
     main {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
 
     .card {
-      background: white;
+      background: #fff;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .card-content {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       padding: 1.5rem;
+      margin-bottom: 2rem;
     }
 
-    .card-content h2 {
-      margin-top: 0;
-      color: #0078d7;
-      font-size: 1.5rem;
+    h2 {
+      border-left: 5px solid #2c7be5;
+      padding-left: 10px;
+      font-size: 1.3rem;
     }
 
-    .card-content p {
-      line-height: 1.6;
-      margin: 0.5rem 0 1rem 0;
+    .screenshot {
+      text-align: center;
+      margin: 1rem 0;
     }
 
-    .card-content a {
+    .screenshot img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
+
+    a.button {
       display: inline-block;
-      padding: 0.6rem 1.2rem;
-      background-color: #0078d7;
+      background-color: #2c7be5;
       color: white;
-      text-decoration: none;
+      padding: 0.8rem 1.5rem;
       border-radius: 6px;
-      transition: background 0.2s ease;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    .card-content a:hover {
-      background-color: #005fa3;
+    a.button:hover {
+      background-color: #1b64c2;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #f0f0f0;
       font-size: 0.9rem;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      .card-content h2 {
-        font-size: 1.3rem;
-      }
-      .card-content p {
-        font-size: 0.95rem;
-      }
+      color: #777;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Apps & Works</h1>
-    <p>これまでに作成したアプリや作品を紹介します</p>
+    <h1>お得はWHICH</h1>
+    <p>どっちがお得なのか一瞬で比較できるアプリ</p>
   </header>
 
   <main>
-    <!-- 作品1 -->
-    <div class="card">
-      <img src="images/app1.png" alt="アプリ1の画像">
-      <div class="card-content">
-        <h2>アプリ名1</h2>
-        <p>このアプリは〇〇を目的として開発しました。特徴は××と△△で、使いやすさを重視しています。</p>
-        <a href="https://play.google.com/store/apps/details?id=example.app1" target="_blank">Google Playで見る</a>
-      </div>
-    </div>
+    <section class="card">
+      <h2>🛒 アプリ概要</h2>
+      <p>
+        「お得はWHICH」は、100gあたりの単価を比較し、どっちがお得か瞬時にわかる計算アプリです。<br>
+        シンプルを追求。片手で簡単操作。電卓を常に表示。入力した直後から自動で計算してくれます。
+      </p>
+    </section>
 
-    <!-- 作品2 -->
-    <div class="card">
-      <img src="images/app2.png" alt="アプリ2の画像">
-      <div class="card-content">
-        <h2>アプリ名2</h2>
-        <p>△△を効率化するツールです。オフラインでも動作し、シンプルなUIを採用しています。</p>
-        <a href="https://github.com/yourname/app2" target="_blank">GitHubで見る</a>
-      </div>
-    </div>
+    <section class="card">
+      <h2>✨ 主な機能</h2>
+      <ul>
+        <li>単価計算</li>
+        <li>電卓風ボタンを常に表示</li>
+        <li>価格と量を入力するだけの２ステップ</li>
+        <li>隠し野菜の豆知識</li>
+      </ul>
+    </section>
 
-    <!-- 作品3 -->
-    <div class="card">
-      <img src="images/work3.png" alt="作品3の画像">
-      <div class="card-content">
-        <h2>作品名3</h2>
-        <p>こちらはWebアプリのデモ作品です。ReactとFirebaseを使用して構築しています。</p>
-        <a href="https://yourname.github.io/work3/" target="_blank">サイトを見る</a>
+    <section class="card">
+      <h2>📱 イメージ</h2>
+      <div class="screenshot">
+        <img src="screenshot.png" alt="アプリ画面のイメージ">
       </div>
-    </div>
+    </section>
+
+    <!--
+      <section class="card" style="text-align:center;">
+        <h2>🚀 ダウンロード・リンク</h2>
+        <p>下記のリンクからアプリページをご覧いただけます。</p>
+        <a href="https://play.google.com/store/apps/details?id=your.app.id" class="button" target="_blank">
+          Google Playで見る
+        </a>
+      </section>
+    -->
   </main>
 
   <footer>
-    © 2025 Your Name
+    <p>
+      <a href="https://rgns2424.github.io/otokuhawhich/privacy" target="_blank">
+        プライバシーポリシー
+      </a>
+    </p>
+    <p>© 2025 お得はWHICH</p>
   </footer>
 </body>
 </html>
